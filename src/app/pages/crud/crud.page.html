@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="crud">
+        <h1>Obtener el show por id</h1>
+        <form>  
+            <input type="number" [(ngModel)]="id" name="id" ngModel>
+            <button type="button" (click)="searchById()">Buscar</button>
+        </form> 
+    </div>
+    <div class="crud">
+        <h1>Show</h1>
+        <app-shows-list [tvShows]="tvShows"></app-shows-list>
+    </div>
+    <div class="crud">
+        <h1>Insertar show</h1>
+        <form>  
+            <input type="number" placeholder="Id" [(ngModel)]="idReg" name="id" ngModel>
+            <input type="text"placeholder="Titulo"  [(ngModel)]="titleReg" name="titulo" ngModel>
+            <input type="number"  placeholder="Año" [(ngModel)]="yearReg" name="anio" ngModel>
+            <input type="number" placeholder="Episodio"[(ngModel)]="chaptersReg" name="Episodio" ngModel>
+            <input type="text" placeholder="Imagen"[(ngModel)]="imageReg" name="Imagen" ngModel>
+            <button (click)="insertTvShow()">Insertar</button>
+        </form>
+    </div>
+    <div class="crud">
+        <h1>Editar show</h1>
+        <form>  
+            <input type="number" placeholder="Id" [(ngModel)]="idUp" name="id" ngModel>
+            <input type="text"placeholder="Titulo"  [(ngModel)]="titleUp" name="titulo" ngModel>
+            <input type="number"  placeholder="Año" [(ngModel)]="yearUp" name="anio" ngModel>
+            <input type="number" placeholder="Episodio"[(ngModel)]="chaptersUp" name="Episodio" ngModel>
+            <input type="text" placeholder="Imagen"[(ngModel)]="imageUp" name="Imagen" ngModel>
+            <button (click)="updateTvShow()">Insertar</button>
+        </form>
+    </div>
+    <div class="crud">
+        <h1>Eliminar show</h1>
+        <form>  
+            <input type="number" [(ngModel)]="idErase" name="id" ngModel>
+            <button (click)="deleteTvShow()">Eliminar</button>
+        </form>
+    </div>
+</div>

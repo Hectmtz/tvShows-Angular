@@ -1,0 +1,37 @@
+img {
+    height: 300px;
+    width: 220px;
+}
+
+.card{
+    max-width: 250px;
+    height: 370px;
+    margin: 20px 40px;
+    padding: 15px;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.selected{
+    background-color: rgb(214, 214, 41);
+}
+
+.title{
+    max-width: 220px;
+    display: flex;
+    
+}
+
+.delete{
+    display: flex;
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}

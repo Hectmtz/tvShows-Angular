@@ -1,0 +1,10 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

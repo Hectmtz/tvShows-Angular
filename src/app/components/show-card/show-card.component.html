@@ -1,0 +1,9 @@
+<div class="card" [ngClass]="{'selected': tvShow.isSelected == true}" (click)="onSelect()">
+    <div>
+        <div (click)="onDeleteClick()" class="delete">X</div>
+    </div>
+    <img [src]="tvShow.image" alt="">
+    <div class="title">{{tvShow.title}}</div>
+    <div>Episodios: {{tvShow.episodes}}</div>
+    <div>Año: {{tvShow.year}}</div>
+</div>
